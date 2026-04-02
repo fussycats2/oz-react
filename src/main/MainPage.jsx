@@ -1,4 +1,4 @@
-import Card from '../common/Card';
+import Card from '../common/card/Card';
 import StyledBox from '../common/box/StyledBox';
 
 const Greeting = () => {
