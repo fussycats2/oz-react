@@ -1,29 +1,28 @@
-import Card from '../common/card/Card';
-import StyledBox from '../common/box/StyledBox';
+import Card from "../common/card/Card";
+import StyledBox from "../common/box/StyledBox";
 
 const Greeting = () => {
-    const name = 'Cho';
-    return (
-      <div>
-        <h1>Hello, {name}</h1>
-      </div>
-    );
-  };
-  
-const Button = () => {
-    return <button>Click me</button>;
-  };
-
-const MainPage = () => {
-    return (
-        <>
-            <Greeting />
-            <Button />
-            <Card />
-            <StyledBox />
-        </>
-    );
+  const name = "Taem";
+  return (
+    <div>
+      <h1>Hello, {name}</h1>
+    </div>
+  );
 };
 
-export default MainPage; 
+const Button = () => {
+  return <button>Click me</button>;
+};
 
+const MainPage = () => {
+  return (
+    <>
+      <Greeting />
+      <Button />
+      <Card />
+      <StyledBox />
+    </>
+  );
+};
+
+export default MainPage;

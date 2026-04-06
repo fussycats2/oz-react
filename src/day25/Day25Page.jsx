@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Counter from "./counter/Counter";
 import UserForm from "./user-form/UserForm";
-import DataFetch from "./date-fetch/DateFetch";
+import DataFetch from "./data-fetch/DataFetch";
 import InputControl from "../common/input/InputControl";
+import Card from "../common/card/Card";
 
 const Day25Page = () => {
   const [text, setText] = useState("");
@@ -22,4 +23,4 @@ const Day25Page = () => {
   );
 };
 
-export default Day25Page; 
+export default Day25Page;
