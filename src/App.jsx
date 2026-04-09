@@ -9,10 +9,9 @@ import UserView from "./day26/user/UserView";
 import NotFound from "./layout/NotFound";
 import MyPage from "./mypage/MyPage";
 import PrivateRoute from "./layout/PrivateRoute";
+import AuthPage from "./auth/AuthPage";
 
 function App() {
-  const isAuth = false; // 인증 여부
-
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -22,7 +21,8 @@ function App() {
         <Route path="/day26/user" element={<UserList />} />
         <Route path="/day26/post" element={<PostList />} />
         <Route path="/day26/user/:id" element={<UserView />} />
-        <Route element={<PrivateRoute isAuth={isAuth} />}>
+        <Route path="/login" element={<AuthPage />} />
+        <Route element={<PrivateRoute />}>
           <Route path="/mypage" element={<MyPage />} />
         </Route>
         <Route path="*" element={<NotFound />} />
